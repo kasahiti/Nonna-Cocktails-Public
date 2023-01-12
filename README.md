@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Nonna Cocktails
+## Introduction
+Nonna Cocktails est une application de recherche et de visualisation de cocktails et de gestion de ses cocktails favoris. Elle inclus une interface utilisateur web et permet une gestion basique des données de l'utilisateur.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Démarrage du projet
+Pour lancer le projet, exécuter les commandes `npm install` et `npm start` à la racine du projet. 
+Vous pouvez également visualiser la démonstration sur [Heroku](https://nonna-cocktails-frontend.herokuapp.com/).
 
-## Available Scripts
+## Technologies Utilisées
+### Frontend
+- React.js
+  - Helmet
+  - React Router
+  - Babel
+  - Axios pour les requêtes REST au backend
+  - jspdf pour la génération de PDFs
+  - D'autres librairies pour la gestion des icones, dates, tables, etc. (cf. [package.json](package.json))
+- Material UI (MUI)
+  - [Template de dashboard - Material kit react](https://mui.com/store/items/minimal-dashboard-free/)
+  - [Tous les composants sont listés ici](https://mui.com/material-ui/getting-started/overview/)
 
-In the project directory, you can run:
 
-### `npm start`
+## Backend
+- Spring
+  - Spring Data Rest
+  - Spring Security
+- H2
+- JWT
+- Unirest Java
+- Express.js
+- Heroku Maven Plugin pour le déploiement sur Heroku
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Architecture
+### Dossier racine
+Contient les fichiers de configuration du projet tel que `package.json`, `.gitignore`, `jsconfig.json`, etc.
+Nous y trouvons également un fichier Procfile pour le déploiement dans un "Dyno" Heroku.
 
-### `npm test`
+### Dossier backend/
+Ce dossier contient tous les fichiers sources pour build le backend et le déployer sur Heroku avec Maven.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Dossier node_modules/
+Ce dossier contient toutes les dépendances du projet. Pour l'installer, il faut lancer la commande `npm install` sur le projet.
 
-### `npm run build`
+### Dossier public/
+Ce dossier contient tous les éléments statiques de l'application web (logos, index.html de base, etc.).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dossier src/
+Contient tous les fichiers sources React du projet.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dossier scripts/
+Contient le fichier pour lancer un serveur Express.js lors d'un déploiement dans Heroku 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
