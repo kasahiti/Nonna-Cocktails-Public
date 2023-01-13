@@ -105,7 +105,7 @@ export default function UserPage() {
                     color="inherit"
                     size="small"
                     onClick={() => {
-                      setOpen(false);
+                      setAlertOpen(false);
                     }}
                   >
                     <CloseIcon fontSize="inherit" />
